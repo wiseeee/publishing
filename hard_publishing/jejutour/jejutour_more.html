@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jejutour.css">
+    <script src="https://kit.fontawesome.com/3b9b603b09.js" crossorigin="anonymous"></script>
+    <title>제주투어 메인</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu l-cnt">
+            <div class="menu_wrap left">
+                <a href="#" class="menu">자유여행패키지</a>
+                <a href="#" class="menu">할인항공</a>
+                <a href="#" class="menu">할인숙소</a>
+                <a href="#" class="menu">할인렌트카</a>
+                <a href="#" class="menu">제주도 골프</a>
+            </div>
+            <div class="logo">제주여행</div>
+            <div class="menu_wrap right">
+                <a href="#" class="menu">제주버스여행</a>
+                <a href="#" class="menu">관광지할인쿠폰</a>
+                <a href="#" class="menu">예약확인/결제</a>
+                <a href="#" class="menu">고객센터</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="list">
+        <div class="search_tab">
+            <form class="l-cnt">
+                <div class="search_box w168">
+                    <i class="far fa-calendar-alt"></i>
+                    <select class="select w90" name="start_date">
+                        <option vlaue="2.28">2월 28일 목</option>
+                        <option vlaue="3.1">3월 01일 금</option>
+                    </select>
+                    <select class="select_box w40" name="start_time">
+                        <option vlaue="12:00">12:00</option>
+                        <option vlaue="13:00">13:00</option>
+                    </select>
+                </div>
+                <div class="search_box w168">
+                    <i class="far fa-calendar-alt"></i>
+                    <select class="select w90" name="end_date">
+                        <option vlaue="3.1">3월 01일 금</option>
+                        <option vlaue="3.2">3월 02일 금</option>
+                    </select>
+                    <select class="select_box w40" name="end_time">
+                        <option vlaue="12:00">12:00</option>
+                        <option vlaue="13:00">13:00</option>
+                    </select>
+                </div>
+                <div class="search_box w227">
+                    <i class="fas fa-user-tie"></i>
+                    <select class="select w60" name="adult">
+                        <option vlaue="성인 1명">성인 1명</option>
+                        <option vlaue="성인 2명">성인 2명</option>
+                    </select>
+                    <select class="select_box w60" name="children">
+                        <option vlaue="소인 1명">소인 1명</option>
+                        <option vlaue="소인 2명">소인 2명</option>
+                    </select>
+                    <select class="select_box w60" name="baby">
+                        <option vlaue="유아 1명">유아 1명</option>
+                        <option vlaue="유아 2명">유아 2명</option>
+                    </select>
+                </div>
+                <div class="search_box w87">
+                    <i class="fas fa-plane-departure"></i>
+                    <select class="select" name="departure">
+                        <option vlaue="김포">김포 출발</option>
+                        <option vlaue="제주">제주 출발</option>
+                    </select>
+                </div>
+                <div class="search_box w287">
+                    <i class="fas fa-car"></i>
+                    <select class="select w210 dot" name="car">
+                        <option vlaue="m_17">올뉴모닝 후방카메라 2017-2018년도 모델</option>
+                        <option vlaue="m_18">올뉴모닝 후방카메라 2017-2018년도 모델</option>
+                    </select>
+                    <select class="select_box w30" name="car_number">
+                        <option vlaue="1">1대</option>
+                        <option vlaue="2">2대</option>
+                    </select>
+                </div>
+                <button class="search_button">검색하기</button>
+                
+            </form>
+        </div>
+        <div class="filter">
+            <div class="l-cnt">
+                <form class="filter_form">
+                    <div class="flex_wrap"><span class="label">조건검색</span></div>
+                    <div class="flex_wrap">
+                        <ul class="filter_group">
+                            <li class="group w76">
+                                <i class="fas fa-tag"></i>
+                                <span class="group_name">분류</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류1
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류2
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="group w76">
+                                <i class="fas fa-camera"></i>
+                                <span class="group_name">전망</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">시티뷰
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">오션뷰
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="group w101">
+                                <i class="fas fa-hotel"></i>
+                                <span class="group_name">부대시설</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류1
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류2
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="group w76">
+                                <i class="fas fa-tag"></i>
+                                <span class="group_name">테마</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류1
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류2
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="group w76">
+                                <i class="fas fa-map-pin"></i>
+                                <span class="group_name">객실별</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류1
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류2
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex_wrap">    
+                        <div class="search_text_border">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="search_text" placeholder="숙소명을 입력해주세요 ex. 신라호텔">
+                        </div>
+                    </div>
+                </form>    
+            </div>
+        </div>
+        <div class="cnt l-cnt">
+            <div class="tit_01">
+                <span class="f20 medium">[에어카텔] 신라호텔 2박 3일 + 왕복항공 + 올뉴모닝 후방카메라 2017~18년식 3월번개할인</span>
+                <a href="#" class="f12"><i class="fas fa-map-marker-alt"></i>위치보기</a>
+            </div>
+            <div class="tit_02">
+                <div class="tit_02_left">
+                    <table>
+                        <tr>
+                            <td><span class="f14 medium">상품가격</span></td>
+                            <td>
+                                <span class="f20 red">199,000원</span>
+                                <span class="f12 gray">(세금, 봉사료, 유류할증료 포함)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="f14 medium">여행기간</span></td>
+                            <td>2019 - 03 - 01 ~ 2019 - 03- 02    1박 2일</td>
+                        </tr>
+                        <tr>
+                            <td><span class="f14 medium">항공</span></td>
+                            <td>대한항공</td>
+                        </tr>
+                        <tr>
+                            <td><span class="f14 medium">숙소</span></td>
+                            <td>신라호텔</td>
+                        </tr>
+                        <tr>
+                            <td><span class="f14 medium">렌터카</span></td>
+                            <td>올뉴모닝 후방카메라 2017~2018년식 3월 번개할인</td>
+                        </tr>
+                    </table>
+                    <div class="pic_small">
+                        <ul>
+                            <li class="small_box"></li>
+                            <li class="small_box"></li>
+                            <li class="small_box"></li>
+                            <li class="small_box"></li>
+                            <li class="small_box"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tit_02_right">
+                    <div class="big_box"></div>
+                </div>
+            </div>
+            <div class="tit_03">
+                <div class="tit_title borderbottom">
+                    <div class="tit_left">
+                        <span class="f22 blue bold">객실</span>
+                        <span class="f22 blod">선택</span>
+                    </div>
+                    <div class="tit_right">
+                        <div class="circle"><i class="fas fa-comment-dots"></i></div>
+                        <div class="f14 blue border_blue">객실의 컨디션이 궁금하다면 문의하세요!</div>
+                    </div>
+                </div>
+                
+                <div class="tit_03_pick">
+                    <div class="hotel_pick">
+                        <span class="f16">[원룸] 본관 스탠다드 산 조망 (조식 불포함)</span>
+                        <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="hotel_more">
+                        <div class="more_wrap">
+                            <span class="f14">객실 사진</span>
+                            <div class="more_01_big_pic"></div>
+                            <div class="more_01_small_pic_wrap">
+                                <ul>
+                                    <li class="more_01_small_pic"></li>
+                                    <li class="more_01_small_pic"></li>
+                                    <li class="more_01_small_pic"></li>
+                                    <li class="more_01_small_pic"></li>
+                                    <li class="more_01_small_pic"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="more_wrap">
+                            <div class="more_table_title_wrap">
+                                <div class="f14 w330">객실 정보</div>
+                                <div class="f14 w150">객실 요금  |  1박</div>
+                                <div class="f14 w200">예약</div>
+                            </div>
+                            <div class="more_table_wrap">
+                                <div class="inbox">
+                                    <div class="box">
+                                        <table class="box1_table">
+                                            <tr>
+                                                <td class="w65"><span class="f14">룸 타입</span></td>
+                                                <td><span class="f14 gray">원룸</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w65"><span class="f14">수용인원</span></td>
+                                                <td><span class="f14 gray">기준인원 2명 / 최대인원  2명</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w65"><span class="f14">객실비품</span></td>
+                                                <td><span class="f14 gray">미니바, 전화, TV, CATV, 초고속 인터넷, 
+                                                    목욕시설, 고급화장품 및 세면용품, 헤어드라이어, 
+                                                    비상벨, 비상로프, 방염 마스크, 개별온도장치, 금고, 
+                                                    체중계</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w65"><span class="f14">객실설명</span></td>
+                                                <td><span class="f14 gray">산 전망 , 조식 불포함 상품</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="box w150 right">
+                                        <span class="f24 bold red">1,304,750</span>
+                                        <span class="f16 red">원</span>
+                                    </div>
+                                    <div class="box w200 right">
+                                        <form>
+                                            <select class="hotel_num">
+                                                <option>객실 1개</option>
+                                                <option>객실 2개</option>
+                                                <option>객실 3개</option>
+                                            </select>
+                                            <button type="submit" class="w186">객실 선택</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tit_03_pick no-active">
+                    <div class="hotel_pick">
+                        <span class="f16 blue">[원룸] 본관 스탠다드 바다 조망 (조식 불포함)<i class="far fa-check-circle"></i></span>
+                        <span class="arrow"></span>
+                    </div>
+                </div>  
+                <div class="tit_03_pick no-active">
+                    <div class="hotel_pick">
+                        <span class="f16">[원룸] 본관 디럭스 스위트  바다 조망 (조식 불포함)</span>
+                        <span class="arrow"></span>
+                    </div>
+                </div>  
+
+            </div>
+            
+            <div class="tit_04">
+                <span class="f22 blue bold">항공권</span>
+                <span class="f22 blod">선택</span>
+                <div class="tit_04_search">
+                    <div class="tit_04_flight go f20 bold">
+                        <div class="flight_01"><i class="fas fa-plane-departure"></i>가는항공편</div>
+                        <div class="flight_02">
+                            <span class="darkblue">2019-03-01(금)</span>
+                            <span>김포<i class="fas fa-caret-right"></i>  제주행</span>
+                        </div>
+                    </div>
+                    <div class="tit_04_flight back f20 bold">
+                        <div class="flight_01"><i class="fas fa-plane-arrival"></i>오는항공편</div>
+                        <div class="flight_02">
+                            <span class="dark">2019-03-01(금)</span>
+                            <span class="">제주<i class="fas fa-caret-right"></i>  김포행</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_border">
+                    <form>
+                        <select class="w145 f14" name="plane">
+                            <option vlaue="asiana">아시아나항공</option>
+                            <option vlaue="korean">대한항공</option>
+                        </select>
+                        <select class="w145 f14" name="gotime">
+                            <option vlaue="go7">7:00</option>
+                            <option vlaue="go7">7:00</option>
+                        </select>
+                        <select class="w145 f14" name="backtime">
+                            <option vlaue="back7">7:00</option>
+                            <option vlaue="back7">7:00</option>
+                        </select>
+                    </form>
+                    <div class="form_result">
+                        <span class="f14">적용 필터</span>
+                        <span class="f14 gray">항공사</span>
+                        <span class="f14 blue">대한항공</span>
+                        <span class="f14 gray">출발시각</span>
+                        <span class="f14 blue">일부 출발시각</span>
+                        <span class="f14 gray">도착시각</span>
+                        <span class="f14 blue">일부 도착시각</span>
+                    </div>
+                </div>
+            </div>
+            <div class="table_container l-cnt">
+                <div class="table_wrapper_border">
+                    <div class="table_header_fixed"></div>
+                    <div class="table_wrapper">
+                        <table class="fixed_table">
+                            <thead>
+                                <th><div class="th-text">항공편<i class="fas fa-caret-down"></i></div></th>
+                                <th><div class="th-text">탑승시간<i class="fas fa-caret-down"></i></div></th>
+                                <th><div class="th-text">항공편 선택</div></th>
+                                <th><div class="th-text">항공편<i class="fas fa-caret-down"></i></div></th>
+                                <th><div class="th-text">탑승시간<i class="fas fa-caret-down"></i></div></th>
+                                <th><div class="th-text">가격<i class="fas fa-caret-down"></i></div></th>
+                                <th><div class="th-text">항공편 선택</div></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td><div class="blue_bg f12"><i class="far fa-dot-circle"></i>가는 항공편</div></td>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td>190,000</td>
+                                    <td><div class="blue_bg f12">항공확정</div></td>
+                                </tr>
+                                <tr>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td><div class="blue_bg f12"><i class="far fa-dot-circle"></i>가는 항공편</div></td>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td>190,000</td>
+                                    <td><div class="blue_bg f12">항공확정</div></td>
+                                </tr>
+                                <tr>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td><div class="blue_bg f12"><i class="far fa-dot-circle"></i>가는 항공편</div></td>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td>190,000</td>
+                                    <td><div class="blue_bg f12">항공확정</div></td>
+                                </tr>
+                                <tr>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td><div class="blue_bg f12"><i class="far fa-dot-circle"></i>가는 항공편</div></td>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td>190,000</td>
+                                    <td><div class="blue_bg f12">항공확정</div></td>
+                                </tr>
+                                <tr>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td><div class="blue_bg f12"><i class="far fa-dot-circle"></i>가는 항공편</div></td>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td>190,000</td>
+                                    <td><div class="blue_bg f12">항공확정</div></td>
+                                </tr>
+                                <tr>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td><div class="blue_bg f12"><i class="far fa-dot-circle"></i>가는 항공편</div></td>
+                                    <td>아시아나항공</td>
+                                    <td>06:05 <i class="fas fa-long-arrow-alt-right"></i> 07:15</td>
+                                    <td>190,000</td>
+                                    <td><div class="blue_bg f12">항공확정</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>    
+            </div>
+            <div class="tit_05">
+                <span class="f22 blue bold">렌터카</span>
+                <span class="f22 blod">선택</span>
+                <div class="tit_05_border">
+                    <div class="car_pic"></div>
+                    <div class="table_wrap">
+                        <table class="car_more">
+                            <tr>
+                                <td class="w110">차량명</td>
+                                <td>올뉴모닝 후방카메라 2017~2018년식 3월 번개할인</td>
+                            </tr>
+                            <tr>
+                                <td class="w110">차량 변경</td>
+                                <td>
+                                    <select name="car_change" class="w487">
+                                        <option value="">올뉴모닝 후방카메라 2017~2018년식 3월 번개할인</option>
+                                        <option value="">올뉴모닝 후방카메라 2017~2018년식 3월 번개할인</option>
+                                        <option value="">올뉴모닝 후방카메라 2017~2018년식 3월 번개할인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="w110">차량 수</td>
+                                <td>
+                                    <select name="car_change" class="w487">
+                                        <option value="">1대</option>
+                                        <option value="">2대</option>
+                                        <option value="">3대</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="w110">차량 정보</td>
+                                <td>5인승 | 휘발유 | 오토 | 2018년식</td>
+                            </tr>
+                            <tr>
+                                <td class="w110">비고</td>
+                                <td>올뉴모닝 후방카메라 2017~2018년식 3월 번개할인</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tit_06">
+                <span class="f22 blue bold">확정상품</span>
+                <span class="f22 blod">목록</span>
+                <div class="tit_06_border">
+                    <div class="ul_wrap">
+                        <ul>
+                            <li class="fix_detail">
+                                <i class="far fa-calendar-alt"></i>
+                                <span class="f14 medium blue">일정</span>
+                                <span class="f14 medium">[1박2일]  2019년 03월 01일   김포출발   성인 1명, 소아 0명,  유아 0명</span>
+                            </li>
+                            <li class="fix_detail">
+                                <i class="fas fa-plane-departure"></i>
+                                <span class="f14 medium blue">항공</span>
+                                <span class="f14 medium">[아시아나항공] <span class="red">김포 → 제주행</span>  03/01 (금) 출발 08:15  도착 09:20  <span class="red">제주 → 김포행 </span> 03/12 (화) 출발 07:55  도착 09:00</span>
+                            </li>
+                            <li class="fix_detail">
+                                <i class="fas fa-hotel"></i>
+                                <span class="f14 medium blue">숙소</span>
+                                <span class="f14 medium">[신라호텔] 원룸 디럭스 스위트 2인 1실 본관 스탠다드 바다 조망 (조식 불포함)</span>
+                            </li>
+                            <li class="fix_detail">
+                                <i class="fas fa-car-alt"></i>
+                                <span class="f14 medium blue">렌터카</span>
+                                <span class="f14 medium">올뉴모닝 후방카메라 2017~2018년식 3월 번개할인</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price_wrap">
+                        <div class="price">
+                            <div class="wrap">
+                                <span class="f16 medium">총 요금</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="f40 bold red">1,304,750</span>
+                                <span class="f16 medium">원</span>
+                            </div>
+                        </div>
+                        <div class="complete">
+                            <a href="#" class="complete_01">상품 담기</a>
+                            <a href="#" class="complete_02">바로구매</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="tit_07">
+                <div class="tabs">
+                    <div class="tab active">숙소 위치정보</div>
+                    <div class="tab">숙소 이용안내</div>
+                    <div class="tab">항공 이용안내</div>
+                    <div class="tab">렌터카 이용안내</div>
+                    <div class="tab">환불 · 취소규정</div>
+                </div>
+                <div class="tab_detail">
+                    <span class="f20 rightbar">소개</span>
+                    <span class="f14">제주그랜드호텔은 공항과 10분 거리인 제주 중심 관광휴양도시 신제주에 위치해 있어 접근성이 매우 용의하며, 스위트, 트윈, 온돌 등 512실의 다양한 객실을 보유하고 있습니다. 
+                        5개국어 동시통역이 가능한 대형, 중형, 소형 등 다양한 타입의 연회장을 비롯하여 실외수영장, 도심 속 휴식공간 솔동산, 카지노 등 다양한 부대시설과 뛰어난 맛과 품질의 식음료 업장 뿐만 아니라 
+                        서비스맨들의 고객 최우선의 마인드로 쾌적함과 즐거움을 동시에 만끽할 수 있는 최상의 휴식공간을 제공하는 국제수준의 특 1급 호텔입니다.</span>
+                    <span class="f20 rightbar">부대시설</span>
+                    <span class="f14">제주그랜드호텔은 공항과 10분 거리인 제주 중심 관광휴양도시 신제주에 위치해 있어 접근성이 매우 용의하며, 스위트, 트윈, 온돌 등 512실의 다양한 객실을 보유하고 있습니다. 
+                        5개국어 동시통역이 가능한 대형, 중형, 소형 등 다양한 타입의 연회장을 비롯하여 실외수영장, 도심 속 휴식공간 솔동산, 카지노 등 다양한 부대시설과 뛰어난 맛과 품질의 식음료 업장 뿐만 아니라 
+                        서비스맨들의 고객 최우선의 마인드로 쾌적함과 즐거움을 동시에 만끽할 수 있는 최상의 휴식공간을 제공하는 국제수준의 특 1급 호텔입니다.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="l-cnt">
+            <div class="ad">
+                <div class="txt">나만의 완벽한 여행을 계획하세요</div>
+                <div class="ad_more">
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                    <p class="more">항공·숙소·렌터카·골프<br>가격을 한눈에!</p>
+                </div>
+                <div class="ad_more">
+                    <div class="icon"><i class="fas fa-check"></i></div>
+                    <span class="more">원하는 상품만<br>체크! 체크!</span>
+                </div>
+                <div class="ad_more">
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                    <span class="more">나만의 여행코스로<br>자유롭게 떠나자!</span>
+                </div>
+                <div class="btn">
+                    <a href="#">나만의 여행 만들기 ></a>
+                </div>
+            </div>
+            <div class="law">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">전자상거래표준약관</a>
+                <a href="#">국내여행표준약관</a>
+                <a href="#">이메일무단수집거부</a>
+            </div>
+            <div class="bottom">
+                <div class="about">
+                    <p class="about_title">about us</p>
+                    <div class="bar"></div>
+                    <span class="basic">(주)제주여행 | 대표자 : 장석훈</span><br>
+                    <span class="basic">사업자번호 : 285-01-00836</span><br>
+                    <span class="basic">통신판매업신고 : 제2017-6510057-30-2-00013호</span><br>
+                    <span class="basic">관광사업등록번호 : 제2017-44호</span><br>
+                    <span class="basic">개인정보보호책임 : 장석훈</span><br>
+                    <a href="#" class="business">사업자 정보확인</a>
+                </div>
+                <div class="about">
+                    <p class="about_title">customer center & address</p>
+                    <div class="bar"></div>
+                    <span class="bold">대표전화 : 064-711-1222</span><br><br>
+                    <span class="basic">-평일 : 오전9시 부터 오전 5시30분까지</span><br>
+                    <span class="basic">-점심시간 : 오전 12시 부터 오후 3시까지(토/일요일 및 공휴일 휴무)</span>
+                    <br><br><br><br>
+                    <span class="basic pad">© 2019 제주여행. ALL RIGHTS RESERVED.</span>
+                </div>
+                <div class="about">
+                    <p class="about_title">sns</p>
+                    <div class="bar"></div>
+                    <div class="icon"><i class="fab fa-twitch"></i></div>
+                    <a href="#" class="naver">네이버톡톡 상담하기</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jejutour.css">
+    <script src="https://kit.fontawesome.com/3b9b603b09.js" crossorigin="anonymous"></script>
+    <title>제주투어 메인</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu l-cnt">
+            <div class="menu_wrap left">
+                <a href="#" class="menu">자유여행패키지</a>
+                <a href="#" class="menu">할인항공</a>
+                <a href="#" class="menu">할인숙소</a>
+                <a href="#" class="menu">할인렌트카</a>
+                <a href="#" class="menu">제주도 골프</a>
+            </div>
+            <div class="logo">제주여행</div>
+            <div class="menu_wrap right">
+                <a href="#" class="menu">제주버스여행</a>
+                <a href="#" class="menu">관광지할인쿠폰</a>
+                <a href="#" class="menu">예약확인/결제</a>
+                <a href="#" class="menu">고객센터</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="list">
+        <div class="search_tab">
+            <form class="l-cnt">
+                <div class="search_box w168">
+                    <i class="far fa-calendar-alt"></i>
+                    <select class="select w90" name="start_date">
+                        <option vlaue="2.28">2월 28일 목</option>
+                        <option vlaue="3.1">3월 01일 금</option>
+                    </select>
+                    <select class="select_box w40" name="start_time">
+                        <option vlaue="12:00">12:00</option>
+                        <option vlaue="13:00">13:00</option>
+                    </select>
+                </div>
+                <div class="search_box w168">
+                    <i class="far fa-calendar-alt"></i>
+                    <select class="select w90" name="end_date">
+                        <option vlaue="3.1">3월 01일 금</option>
+                        <option vlaue="3.2">3월 02일 금</option>
+                    </select>
+                    <select class="select_box w40" name="end_time">
+                        <option vlaue="12:00">12:00</option>
+                        <option vlaue="13:00">13:00</option>
+                    </select>
+                </div>
+                <div class="search_box w227">
+                    <i class="fas fa-user-tie"></i>
+                    <select class="select w60" name="adult">
+                        <option vlaue="성인 1명">성인 1명</option>
+                        <option vlaue="성인 2명">성인 2명</option>
+                    </select>
+                    <select class="select_box w60" name="children">
+                        <option vlaue="소인 1명">소인 1명</option>
+                        <option vlaue="소인 2명">소인 2명</option>
+                    </select>
+                    <select class="select_box w60" name="baby">
+                        <option vlaue="유아 1명">유아 1명</option>
+                        <option vlaue="유아 2명">유아 2명</option>
+                    </select>
+                </div>
+                <div class="search_box w87">
+                    <i class="fas fa-plane-departure"></i>
+                    <select class="select" name="departure">
+                        <option vlaue="김포">김포 출발</option>
+                        <option vlaue="제주">제주 출발</option>
+                    </select>
+                </div>
+                <div class="search_box w287">
+                    <i class="fas fa-car"></i>
+                    <select class="select w210 dot" name="car">
+                        <option vlaue="m_17">올뉴모닝 후방카메라 2017-2018년도 모델</option>
+                        <option vlaue="m_18">올뉴모닝 후방카메라 2017-2018년도 모델</option>
+                    </select>
+                    <select class="select_box w30" name="car_number">
+                        <option vlaue="1">1대</option>
+                        <option vlaue="2">2대</option>
+                    </select>
+                </div>
+                <button class="search_button">검색하기</button>
+                
+            </form>
+        </div>
+        <div class="filter">
+            <div class="l-cnt">
+                <form class="filter_form">
+                    <div class="flex_wrap"><span class="label">조건검색</span></div>
+                    <div class="flex_wrap">
+                        <ul class="filter_group">
+                            <li class="group w76">
+                                <i class="fas fa-tag"></i>
+                                <span class="group_name">분류</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류1
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류2
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="group w76">
+                                <i class="fas fa-camera"></i>
+                                <span class="group_name">전망</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">시티뷰
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">오션뷰
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="group w101">
+                                <i class="fas fa-hotel"></i>
+                                <span class="group_name">부대시설</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류1
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류2
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="group w76">
+                                <i class="fas fa-tag"></i>
+                                <span class="group_name">테마</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류1
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류2
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="group w76">
+                                <i class="fas fa-map-pin"></i>
+                                <span class="group_name">객실별</span>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="checkbox_wrap">
+                                    <ul>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류1
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="checkbox_content">
+                                                <input type="checkbox">분류2
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex_wrap">    
+                        <div class="search_text_border">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="search_text" placeholder="숙소명을 입력해주세요 ex. 신라호텔">
+                        </div>
+                    </div>
+                </form>    
+            </div>
+        </div>
+        <div class="content l-cnt">
+            <div class="tabs">
+                <div class="tab active">에어카텔</div>
+                <div class="tab">에어텔</div>
+                <div class="tab">에어카</div>
+                <div class="tab">카텔</div>
+            </div>
+            <div class="tab_explain">
+                <span class="explain">가성비 보장 100% 제주도 여행! 지금 바로 빠르고 편리하게 항공권과 숙소 렌트카 목록을 확인하세요!</span>
+            </div>
+            <div class="content_tit">
+                <div class="tit_wrap">
+                    <span class="bold">2019 - 03 - 01</span>
+                    검색 결과 
+                    <span class="bold blue">255 개</span>
+                    의 숙소가 검색되었습니다.
+                </div>
+                <div class="tit_wrap">
+                    <a href="#"><i class="fas fa-angle-double-down"></i>추천순</a>
+                    <a href="#"><i class="fas fa-angle-double-down"></i>가나다순</a>
+                    <a href="#"><i class="fas fa-angle-double-down"></i>낮은가격순</a>
+                    <a href="#"><i class="fas fa-angle-double-down"></i>높은가격순</a>
+                </div>  
+            </div>
+            <div class="content_list">
+                <ul>
+                    <li class="cnt_container">
+                        <div class="container_wrap inline">
+                            <div class="tag">에어카텔 베스트<i class="fas fa-crown"></i></div>
+                            <div class="img_big"></div>
+                            <div class="img_small">
+                                <ul>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container_wrap second">
+                            <div class="flex_wrap">
+                                <p class="name">[에어카텔] 라마다프라자 제주호텔</p>
+                                <div class="cate">
+                                    <div class="hotel">호텔</div>
+                                    <div class="view">
+                                        <div class="viewcate">전망</div>
+                                        <div class="viewinfo"><i class="fas fa-image"></i>바다전망</div>
+                                    </div>
+                                </div>    
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location_long">대한민국 제주특별자치도 제주시 삼도2동 탑동로 66</span>
+                                    <a href="#">지도에서 위치보기 </a>
+                                </div>        
+                                <div class="person">
+                                    <i class="fas fa-user-friends"></i>
+                                    최소인원 2 / 최대인원 4
+                                </div>
+                                <div class="add_list">
+                                    <ul>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">레스토랑</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="list_box purple">비즈니스센터</li>
+                                        <li class="list_box purple">레스토랑</li>
+                                        <li class="list_box purple">비즈니스센터</li>
+                                        <li class="list_box purple">레스토랑</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex_wrap">
+                                <div class="caution">
+                                    <span class="caution_box">요금확정기간</span>
+                                    <span class="caution_date">2019 - 06 - 30</span>
+                                    <span class="caution_long"> 요금확정기간은 해당 기간 내에서만 예약이 가능한 기간입니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_wrap third">
+                            <div class="discount">
+                                76% 할인
+                            </div>
+                            <div class="price">
+                                <span class="ex_price">1박당 요금가</span><br>
+                                <span class="org_price"><strike>2,402,100</strike></span><br>
+                                <span class="now_price">2,402,100</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cnt_container">
+                        <div class="container_wrap inline">
+                            <div class="tag">에어카텔 베스트<i class="fas fa-crown"></i></div>
+                            <div class="img_big"></div>
+                            <div class="img_small">
+                                <ul>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container_wrap second">
+                            <div class="flex_wrap">
+                                <p class="name">[에어카텔] 라마다프라자 제주호텔</p>
+                                <div class="cate">
+                                    <div class="hotel">호텔</div>
+                                    <div class="view">
+                                        <div class="viewcate">전망</div>
+                                        <div class="viewinfo"><i class="fas fa-image"></i>바다전망</div>
+                                    </div>
+                                </div>    
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location_long">대한민국 제주특별자치도 제주시 삼도2동 탑동로 66</span>
+                                    <a href="#">지도에서 위치보기 </a>
+                                </div>        
+                                <div class="person">
+                                    <i class="fas fa-user-friends"></i>
+                                    최소인원 2 / 최대인원 4
+                                </div>
+                                <div class="add_list">
+                                    <ul>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">레스토랑</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="list_box purple">비즈니스센터</li>
+                                        <li class="list_box purple">레스토랑</li>
+                                        <li class="list_box purple">비즈니스센터</li>
+                                        <li class="list_box purple">레스토랑</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex_wrap">
+                                <div class="caution">
+                                    <span class="caution_box">요금확정기간</span>
+                                    <span class="caution_date">2019 - 06 - 30</span>
+                                    <span class="caution_long"> 요금확정기간은 해당 기간 내에서만 예약이 가능한 기간입니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_wrap third">
+                            <div class="discount">
+                                76% 할인
+                            </div>
+                            <div class="price">
+                                <span class="ex_price">1박당 요금가</span><br>
+                                <span class="org_price"><strike>2,402,100</strike></span><br>
+                                <span class="now_price">2,402,100</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cnt_container">
+                        <div class="container_wrap inline">
+                            <div class="tag">에어카텔 베스트<i class="fas fa-crown"></i></div>
+                            <div class="img_big"></div>
+                            <div class="img_small">
+                                <ul>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                    <li class="img_small_list"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container_wrap second">
+                            <div class="flex_wrap">
+                                <p class="name">[에어카텔] 라마다프라자 제주호텔</p>
+                                <div class="cate">
+                                    <div class="hotel">호텔</div>
+                                    <div class="view">
+                                        <div class="viewcate">전망</div>
+                                        <div class="viewinfo"><i class="fas fa-image"></i>바다전망</div>
+                                    </div>
+                                </div>    
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location_long">대한민국 제주특별자치도 제주시 삼도2동 탑동로 66</span>
+                                    <a href="#">지도에서 위치보기 </a>
+                                </div>        
+                                <div class="person">
+                                    <i class="fas fa-user-friends"></i>
+                                    최소인원 2 / 최대인원 4
+                                </div>
+                                <div class="add_list">
+                                    <ul>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">비즈니스센터</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">레스토랑</li>
+                                        <li class="list_box green">레스토랑</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="list_box purple">비즈니스센터</li>
+                                        <li class="list_box purple">레스토랑</li>
+                                        <li class="list_box purple">비즈니스센터</li>
+                                        <li class="list_box purple">레스토랑</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex_wrap">
+                                <div class="caution">
+                                    <span class="caution_box">요금확정기간</span>
+                                    <span class="caution_date">2019 - 06 - 30</span>
+                                    <span class="caution_long"> 요금확정기간은 해당 기간 내에서만 예약이 가능한 기간입니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_wrap third">
+                            <div class="discount">
+                                76% 할인
+                            </div>
+                            <div class="price">
+                                <span class="ex_price">1박당 요금가</span><br>
+                                <span class="org_price"><strike>2,402,100</strike></span><br>
+                                <span class="now_price">2,402,100</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="l-cnt">
+            <div class="ad">
+                <div class="txt">나만의 완벽한 여행을 계획하세요</div>
+                <div class="ad_more">
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                    <p class="more">항공·숙소·렌터카·골프<br>가격을 한눈에!</p>
+                </div>
+                <div class="ad_more">
+                    <div class="icon"><i class="fas fa-check"></i></div>
+                    <span class="more">원하는 상품만<br>체크! 체크!</span>
+                </div>
+                <div class="ad_more">
+                    <div class="icon"><i class="far fa-heart"></i></div>
+                    <span class="more">나만의 여행코스로<br>자유롭게 떠나자!</span>
+                </div>
+                <div class="btn">
+                    <a href="#">나만의 여행 만들기 ></a>
+                </div>
+            </div>
+            <div class="law">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">전자상거래표준약관</a>
+                <a href="#">국내여행표준약관</a>
+                <a href="#">이메일무단수집거부</a>
+            </div>
+            <div class="bottom">
+                <div class="about">
+                    <p class="about_title">about us</p>
+                    <div class="bar"></div>
+                    <span class="basic">(주)제주여행 | 대표자 : 장석훈</span><br>
+                    <span class="basic">사업자번호 : 285-01-00836</span><br>
+                    <span class="basic">통신판매업신고 : 제2017-6510057-30-2-00013호</span><br>
+                    <span class="basic">관광사업등록번호 : 제2017-44호</span><br>
+                    <span class="basic">개인정보보호책임 : 장석훈</span><br>
+                    <a href="#" class="business">사업자 정보확인</a>
+                </div>
+                <div class="about">
+                    <p class="about_title">customer center & address</p>
+                    <div class="bar"></div>
+                    <span class="bold">대표전화 : 064-711-1222</span><br><br>
+                    <span class="basic">-평일 : 오전9시 부터 오전 5시30분까지</span><br>
+                    <span class="basic">-점심시간 : 오전 12시 부터 오후 3시까지(토/일요일 및 공휴일 휴무)</span>
+                    <br><br><br><br>
+                    <span class="basic pad">© 2019 제주여행. ALL RIGHTS RESERVED.</span>
+                </div>
+                <div class="about">
+                    <p class="about_title">sns</p>
+                    <div class="bar"></div>
+                    <div class="icon"><i class="fab fa-twitch"></i></div>
+                    <a href="#" class="naver">네이버톡톡 상담하기</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del,div, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration:none; color:#000;}
+
+button{
+    background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer}
+
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container-fluid{padding:0;}
+.container-fluid .right_nav{width:268px; margin:1rem;}
+
+i{padding-right:5px;}
+tr>td{border:0px;}
+.thumbnail{width:120px;}
+.content{background-color:#f1f1f1; margin-left:300px;}
+.ProfileCircle{width:65px;}
+.title{padding:20px 0;}
+.filter:hover{background-color:#ccc; color:#000;}
+.bar{background-color:#ccc; height:6px;}
+.card>img:hover{opacity:0.6;}
+.page-item .page-link{background-color:transparent; border:none; color:#000;}
+.page-item.active .page-link{background-color:#000;}
+.progress{background-color:#9e9e9e; height:2rem; border-radius:0; font-size:1rem;}
+.progress .progress-bar{background-color:#616161; padding:8px 0;}
+.btn.btn-lg.download{background-color:#616161; color:#fff; margin:30px 0; border-radius:0; font-size:1rem;}
+.btn.btn-lg.download:hover{background-color:#9e9e9e;}
+.charge-ul{opacity:0.6;}
+.charge-ul:hover{opacity:1;}
+.background-black{background-color:#000; color:#fff;}
+.background-white{background-color:#fff;}
+.background-green{background-color:#009688; color:#fff;}
+.background-grey{background-color:#616161; color:#fff;}
+.charge-ul .charge-grey .charge-btn{background-color:#009688; color:#fff; padding:12px 24px;}
+.contact{background-color:#9e9e9e;}
+.contact .contact_bar{border-bottom:1px solid #fff;}
+.background-black.btn{border-radius:0;}
+.background-darkgrey{background-color:#616161; color:#fff;}
+.power_a{color:#fff; text-decoration:underline;}
+.power_a:hover{color:#fff;}
+.footer{padding:32px 0;}
+.footer .blog{padding:8px 16px;}
+.blog:hover{background-color:#ccc;}
+.blog:not(:last-child){border-bottom:1px solid #fff;}
+.footer .blog .w50{width:50px; margin-right:16px;}
+.tag{padding:0 8px; background-color:#9e9e9e; color:#000; margin-bottom:16px;}
+.tag.black{background-color:#000; color:#fff;}
+
+
+@media (max-width:992px){
+    .content{background-color:#f1f1f1; margin-left:0;
+    }
+}

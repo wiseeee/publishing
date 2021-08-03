@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the ssan_sub
+    </title>
+    <link rel="stylesheet" href="the_ssan.css">
+    <script src="https://kit.fontawesome.com/3b9b603b09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="main_img l-cnt sub_header">
+            <div class="gnb_wrap">
+                <div class="logo">
+                    the ssan rentcar
+                </div>
+                <div class="gnb">
+                    
+                        <a href="#" class="login">로그인</a>
+                        <a href="#" class="join">회원가입</a>
+                        <a href="#" class="booking_check">예약확인</a>
+                        <a href="#" class="community">커뮤니티</a>
+                        <a href="#" class="language"><i class="fas fa-globe"></i> Language</a>
+                        <a href="#" class="more">더보기</a>
+                    
+                </div>
+            </div>    
+         </div>
+         <div class="cate_wrap">
+            <div class="cate_order l-cnt">
+                <span><i class="fas fa-home"></i></span>
+                <span class="cate">홈</span>
+                <span class="cate">렌트카리스트</span>
+                <span class="cate">렌트카 예약하기</span>
+            </div>
+         </div>
+    </header>
+    <section class="content">
+        <div class="content_wrap l-cnt">
+            <ul>
+                <li class="step">
+                    <span class="step_count">step</span><br>
+                    <span>지점 선택</span>
+                </li>
+                <li class="step">
+                    <span class="step_count">step</span><br>
+                    <span>차량 선택</span>
+                </li>
+                <li class="step">
+                    <span class="step_count">step</span><br>
+                    <span>정보 입력</span>
+                </li>
+                <li class="step">
+                    <span class="step_count">step</span><br>
+                    <span>인원체크&옵션</span>
+                </li>
+                <li class="step">
+                    <span class="step_count">step</span><br>
+                    <span>약관·주의사항 체크리스트</span>
+                </li>
+                <li class="step">
+                    <span class="step_count">step</span><br>
+                    <span>내역확인 및 결제완료</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="step l-cnt">
+            <div class="step_wrap">
+                <div class="step_title">
+                    <span class="title red">지점</span>
+                    <span class="title">선택</span>
+                    <span class="title_sub">렌탈지점과 반납지점을 선택 하신 후 다음버튼을 눌러주세요. </span>
+                </div>
+                <div class="step_choice_wrap">
+                    <div class="step_choice">
+                        <span class="content_title">렌탈 지점</span>
+                        <a href="#" class="content_title_sub red"><i class="fas fa-map-marker-alt"></i>지도에서 선택하기</a><br>
+                        
+                            <select class="choice_box" name="map">
+                                <option value="okinawa">
+                                    
+                                    <span>오키나와 , 미야코지마 섬 지점</span>
+                                </option>
+                            </select>
+                            <ul class="choice_notice">
+                                <li>오키나와 미야코지마 지점 Tel. 000 - 000 - 0000</li>
+                                <li>영업시간 : 평일 오전 09:00 ~ 17:00 ( 주말, 공휴일 휴무 )</li>
+                            </ul>
+                    </div>
+                    <div class="step_choice">
+                        <span class="content_title">반납지역</span>
+                        <a href="#"  class="content_title_sub"><i class="fas fa-map-marker-alt"></i>지도에서 선택하기</a><br>
+                        <select class="choice_box" name="map">
+                            <option value="okinawa">
+                                <span>오키나와 , 미야코지마 섬 지점</span>
+                            </option>
+                        </select>
+                    </div>
+                    <div class="step_choice">
+                        <span class="content_title">렌트일시</span>
+                        <br>
+                            <input type="text" name="rent_date" class="date" vlaue="2019-05-24" placeholder="날짜를 선택해주세요">
+                            <select class="time_box" name="time">
+                                <option value="09:00">
+                                    <span>09:00</span>
+                                </option>
+                            </select>
+                            
+                    </div>
+                    <div class="step_choice">
+                        <span class="content_title">반납일시</span><br>
+                            <input type="text" name="rent_date" class="date" placeholder="날짜를 선택해주세요">
+                            <select class="time_box" name="time">
+                                <option value="09:00">
+                                    <span>09:00</span>
+                                </option>
+                            </select>
+                    </div>
+
+                    <button class="page_move" onclick="location.href">차량 선택으로 이동 <i class="fas fa-angle-double-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="step l-cnt">
+            <div class="step_wrap">
+                <div class="step_title">
+                    <span class="title red">차량</span>
+                    <span class="title">선택</span>
+                    <span class="title_sub">차량 클래스를  선택 하신 후 예약자 정보 입력을 진행해주세요. </span>
+                </div>
+                <div class="item_car">
+                    <span class="content_title">렌탈 지점</span><br>
+                    <select name="car" class="pick_car">
+                        <option value="K5">K 클래스 (경형, 컴팩트)</option>
+                    </select>
+                    <div class="item_img_wrap">
+                        <div class="item_img"></div>
+                        <div class="item_video"></div>
+                    </div>
+                    <ul class="company">
+                        <li>
+                            <a href="#">
+                                <div class="company_wrap">
+                                    <div class="company_img"></div>
+                                    <div class="company_detail">
+                                        <span class="company_name">타임즈렌트카</span><br>
+                                        <span class="company_price">150,000</span>
+                                        <span class="price_won">원 ~</span>
+                                    </div>
+                                </div>  
+                            </a>      
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="company_wrap">
+                                    <div class="company_img"></div>
+                                    <div class="company_detail">
+                                        <span class="company_name">TRC렌트카</span><br>
+                                        <span class="company_price">167,000</span>
+                                        <span class="price_won">원 ~</span>
+                                    </div>
+                                </div> 
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="company_wrap">
+                                    <div class="company_img"></div>
+                                    <div class="company_detail">
+                                        <span class="company_name">유아이렌트카</span><br>
+                                        <span class="company_price">189,000</span>
+                                        <span class="price_won">원 ~</span>
+                                    </div>
+                                </div> 
+                            </a>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="step_title">
+                    <span class="title red">차종</span>
+                    <span class="title">선택</span>
+                    <span class="title_sub">차량 종류를 선택 하신 후 예약자 정보 입력을 진행해주세요.  </span>
+                </div>
+                <div class="item_detail_wrap">
+                    <div class="item_title">
+                        <div class="item_name">
+                            <span class="item_name_ok">컴팩트·경차</span>
+                            <span class="class_pick">K-class</span>
+                            <span class="item_name_ok">웨건 R</span>
+                        </div>
+                        <div class="item_notice"><i class="fas fa-info-circle"></i>하기 차량은 동급으로 현지 사정에 따라 랜덤배정됩니다. (차종 및 차량색상이 다를 수 있습니다)</div>
+                    </div>
+                    <div class="item_detail">
+                        <div class="item_detail_left"></div>
+                        <div class="item_detail_right">
+                            <div class="gray_box">
+                                <span class="detail_name">차량정보</span>
+                                <div class="half_wrap">
+                                    <div class="half">
+                                        <div class="half1">차량종류</div>
+                                        <div class="half2">M</div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="half1">승차정원</div>
+                                        <div class="half2">4명</div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="half1">변속기</div>
+                                        <div class="half2">AUTO</div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="half1">사용연료</div>
+                                        <div class="half2">휘발유</div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="half1">사용연비</div>
+                                        <div class="half2">30.0km</div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="half1">배기량</div>
+                                        <div class="half2">660cc</div>
+                                    </div>
+                                </div>
+                                <span class="detail_name">차량설명</span>
+                                <div class="car_info">▣2종 보통 가능▣ , 승차 정원 : 4명<br>
+                                    공인 연비 : 약 33.0km / 배기량 : 660cc
+                                </div>
+                            </div>
+                            <div class="detail_button">
+                                <a href="#" class="red_box">예약자정보입력 바로가기 </a>
+                                <a href="" class="black_box">주의사항</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+         </div>  
+
+         <div class="step l-cnt">
+            <div class="step_wrap">
+                <div class="flex_wrap">
+                    <div class="flex_left">
+                        <div class="step_title">
+                            <span class="title red">예약자</span>
+                            <span class="title">정보</span>
+                            <span class="title_sub">예약자와 실운전자는 달라도 무방합니다.</span>
+                        </div> 
+                        <div class="flex_left_row_wrap">
+                            <div class="flex_left_row">
+                                <div class="person_kr">
+                                    <span class="content_title">성명(한글)</span><br>
+                                    <input type="text" vlaue="name_kr" class="input_blank w140">
+                                </div>
+                                <div class="person_eng">
+                                    <span class="content_title">성명(영문)</span><br>
+                                    <input type="text" vlaue="name_eng_first" class="input_blank w140">
+                                    <input type="text" vlaue="name_eng" class="input_blank w228" placeholder="영문이름을 입력해주세요.">
+                                </div>
+                            </div> 
+                            <div class="flex_left_row">
+                                <div class="person_number">
+                                    <span class="content_title">휴대폰</span><br>
+                                    <select name="phone" class="input_blank w108">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                    </select>
+                                    <input type="number" vlaue="phone02" class="input_blank w108">
+                                    <input type="number" vlaue="phone03" class="input_blank w108">
+                                </div>
+                                <div class="birthday">
+                                    <span class="content_title">생년월일</span><br>
+                                    <input type="date" value="birth" class="input_blank w150">
+                                </div>
+                            </div>  
+                            <div class="flex_left_row">
+                                <div class="email_row">
+                                    <span class="content_title">이메일</span><br>
+                                    <input type="email" value="email" class="input_blank w540"><br>
+                                    <ul class="choice_notice">
+                                        <li>예약 완료 시 이메일로 바우처를 발송해드리오니 정확한 정보를입력해주세요.   </li>
+                                        <li>daum.net 또는 hanmail.net은 해당 포털 정책으로 메일 수신이 불가할 수 있습니다. </li>
+                                        <li>다른 메일 주소를 선택하시면 보다 정확하게 이메일을 수신하실 수 있습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div> 
+                    </div>
+                    <div class="flex_right">
+                        <table class="price_info">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">요금정보</th>
+                                </tr>
+                                <tr class="table_row_01">
+                                    <td>현지결제</td>
+                                    <td>사전결제</td>
+                                </tr>
+                                <tr class="table_row_02">
+                                    <td>렌트비<span class="price">¥4,000</span><br>
+                                    타지역 반납<span class="price">¥0</span>
+                                    </td>
+                                    <td>NOC 풀커버<span class="price">¥8,000</span></td>
+                                </tr>
+                                <tr class="table_row_03">
+                                    <td>Total ¥ 4,000</td>
+                                    <td class="red">Total ¥ 8,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> 
+                <div class="step_title">
+                    <span class="title red">예약</span>
+                    <span class="title">정보</span>
+                    <span class="title_sub">대여 정보를 확인하신 후 인원체크 및 옵션 바로가기 버튼을 클릭해주세요.</span>
+                </div>
+                <div class="step_choice_wrap">
+                    <div class="step_choice">
+                        <span class="content_title">픽업정보</span>
+                        <a href="#" class="content_title_sub red"><i class="fas fa-map-marker-alt"></i>지도에서 선택하기</a><br>
+                        
+                        <select class="choice_box" name="map">
+                            <option value="naha">
+                                <span>나하공항 지점 ( 2019-03-08 09:00 )</span>
+                            </option>
+                        </select>
+                    </div>
+                    <div class="step_choice">
+                        <span class="content_title">반납정보</span>
+                        <a href="#" class="content_title_sub"><i class="fas fa-map-marker-alt"></i>지도에서 선택하기</a><br>
+                        <select class="choice_box" name="map">
+                            <option value="naha">
+                                <span>나하공항 지점 ( 2019-03-08 09:00 )</span>
+                            </option>
+                        </select>
+                    </div>
+                    <div class="step_choice">
+                        <span class="content_title">차량클래스</span>
+                        <br>
+                            <input type="text" name="car_class" class="input_text" vlaue="2019-05-24" placeholder="소형차 (1300cc) / S Class">
+                    </div>
+                    <div class="step_choice">
+                        <span class="content_title">이용시간</span><br>
+                            <input type="text" name="rent_date" class="input_text" placeholder="24 시간">
+                    </div>
+
+                    <button class="page_move" onclick="location.href">인원체크&옵션 선택하기 <i class="fas fa-angle-double-right"></i></button>
+                </div>    
+            </div>
+        </div> 
+        <div class="step l-cnt">
+            <div class="step_wrap">
+                <div class="step_title">
+                    <span class="title red">인원체크 & 옵션</span>
+                    <span class="title">선택</span>
+                    <span class="title_sub">차량 보험과 옵션을 선택하신 후 약관&주의사항 체크리스트로 이동하세요.</span>
+                </div>
+                <div class="step4_wrap border">
+                    <div class="step4_title">보험선택</div>
+                    <div class="insurance_wrap border">
+                        <div class="insurance_name"> <i class="fas fa-car"></i>NOC 미가입<span> - 대마도 및 26세 미만 이용자는 본 플랜 가입이 불가합니다.</span></div>
+                        <div class="insurance_box">
+                            <span class="insurance_price"></span>
+                            <label>
+                                <input type="checkbox">
+                                <span class="insurance_off_click"><i class="fas fa-check"></i>해당 보험에 가입합니다.</span>
+                            </label>
+                            
+                            <a href="#"  class="insurance_more">보험내용 상세보기</a>
+                        </div>
+                    </div>
+                    <div class="insurance_wrap border">
+                        <div class="insurance_name"><i class="fas fa-car"></i>일반 NOC<span> - 24시간 기준 8,000원 , 이용기간 4일</span></div>
+                        <div class="insurance_box">
+                            <span class="insurance_price">32,000원</span>
+                            <label>
+                                <input type="checkbox">
+                                <span class="insurance_off_click"><i class="fas fa-check"></i>해당 보험에 가입합니다.</span>
+                            </label>
+                            <a href="#" class="insurance_more">보험내용 상세보기</a>
+                        </div>
+                    </div>
+                    <table class="insurance_more_table">
+                        <tbody>
+                            <tr>
+                                <th colspan="3">일반NOC - 보험 상세내용</th>
+                            </tr>
+                            <tr>
+                                <td class="td_01">기본보험</td>
+                                <td class="td_02">대인 1인당 무제한 / 대물 1사고당 무제한 / 자손 1사고당 무제한 / 탑승자 1인당 최대 3000만엔</td>
+                                <td class="td_03"><i class="far fa-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td_01">휴차보상</td>
+                                <td class="td_02">사고 1회에 한해서 최대 5만엔까지</td>
+                                <td class="td_03"><i class="far fa-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td_01">기타보상</td>
+                                <td class="td_02"><strike>소모품 (타이어, 휠커버, 배터리), 렉카요금</strike></td>
+                                <td class="td_03"><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="insurance_wrap border">
+                        <div class="insurance_name"><i class="fas fa-car"></i>풀커버 NOC<span> - 24시간 기준 15,000원 , 이용기간 4일</span></div>
+                        <div class="insurance_box">
+                            <span class="insurance_price">60,000원</span>
+                            <label>
+                                <input type="checkbox">
+                                <span class="insurance_off_click"><i class="fas fa-check"></i>해당 보험에 가입합니다.</span>
+                            </label>
+                            <a href="#"  class="insurance_more">보험내용 상세보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="step4_wrap border">
+                    <div class="step4_title">옵션선택</div>
+                    <div class="line">
+                        <div class="opt_wrap">
+                            <div class="opt_title">네비게이션</div>
+                            <div class="opt_more">
+                                <div>
+                                    <p class="opt_notice"><i class="fas fa-info-circle"></i>지점별 재고에 따라 원하시는 언어로 제공되지 않을 수 있습니다.</p>
+                                    <select name="navi" class="input_blank w470">
+                                        <option value="korean_navi">한국어 네비게이션</option>
+                                        <option value="foreign_navi">외국어 네비게이션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">    
+                            <div class="opt_wrap">
+                                <div class="opt_title">스노우타이어</div>
+                                <div class="opt_more">
+                                    <div>
+                                        <p class="opt_notice"><i class="fas fa-info-circle"></i>하단의 체크박스 버튼을 누르시면 예약이 요청됩니다. </p>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="input_blank w470"><i class="fas fa-check"></i>스노우 타이어를 장착 합니다.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">    
+                            <div class="opt_wrap">
+                                <div class="opt_title"> 
+                                    고속도로<br>프리패스</div><br>
+                                <div class="opt_more">
+                                    <div>
+                                    <p class="opt_notice"><i class="fas fa-info-circle"></i>Expressway Pass를 점포에서 구입하고자 하는 분은 하단의 체크박스를 눌러 주십시오.</p>
+                                    <div class="opt_notice_more">
+                                        <p>차량 픽업 시 <span class="red">Expressway Pass 요금</span>이 <span class="red">별도로 청구</span>되오니 유의해 주십시오.
+                                        </p>
+                                        <p class="gray">Expressway Pass의 이용기간 외의 이용에는 일반 요금이 부과되오니 주의해 주십시오.</p>
+                                        <p class="gray">Expressway Pass란 특정 지역에서 고속 도로를 자유롭게 이용할 수 있는 일본 방문 외국인 한정의 경제적인 패스입니다.</p>
+                                        
+                                        <p class="tab">수령 시에 <span class="red">여권을 제시</span>해야 합니다. <span class="red">일본 국내 운전면허로는 이용할 수 없습니다.</span></p>
+                                        <p>상세내용은 <span class="red bold">고속도로 프리패스 구매안내 </span>를 클릭하세요.</p>
+                                        </div>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="input_blank w470"><i class="fas fa-check"></i>Expressway pass를 구입합니다.</span>
+                                        </label>  
+                                   
+                                </div> 
+                                </div>
+                            </div>
+                        </div>       
+                </div>
+                <div class="step4_wrap border">
+                    <div class="step4_title bottom">카시트 선택</div>
+                    <div class="carsheet_notice">
+                        <span class="opt_notice"><span class="red"><i class="fas fa-info-circle"></i> 6세 미만의 어린이</span>에게는 <span class="red">카시트 사용이 의무화</span>되어 있습니다.</span>
+                        <div class="opt_notice_more">해당하는 어린이가 동승할 경우에는 반드시 선택해 주세요.<br>
+                        <span class="gray">예약을 하지 않고 고객께서 준비하지 않으신 경우에는 렌터카 사용을 거절할 수 있습니다.</span></div>
+                    </div>
+                    <div class="flex_wrap">
+                        <div class="sheet_box border">
+                            <p class="sheet_title">베이비 카시트</p>
+                            <div class="sheet_img"></div>
+                            <p>생후 9개월 이하</p>
+                            <p>체중 9kg 미만</p>
+                            <p>신장 100cm 이하</p>
+                            <div class="choice_wrap">
+                                <div class="selcet_wrap">
+                                    <select name="sheet_num" class="input_blank w96">
+                                        <option value="1">1대</option>
+                                        <option value="2">2대</option>
+                                    </select>
+                                </div>
+                                <div class="choice">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="input_blank w170">카시트 선택</span>
+                                    </label>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sheet_box border">
+                            <p class="sheet_title">차일드 카시트</p>
+                            <div class="sheet_img"></div>
+                            <p>생후 9개월 ~ 만 3세</p>
+                            <p>체중 9kg ~ 18kg 미만</p>
+                            <p>신장 100cm 이하</p>
+                            <div class="choice_wrap">
+                                <select name="sheet_num" class="input_blank w96">
+                                    <option value="1">1대</option>
+                                    <option value="2">2대</option>
+                                </select>
+                                <div class="choice">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="input_blank w170">카시트 선택</span>
+                                    </label>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sheet_box border">
+                            <p class="sheet_title">주니어 카시트</p>
+                            <div class="sheet_img"></div>
+                            <p>만 3세 ~ 만6세 미만</p>
+                            <p>체중 15kg ~ 32kg 미만</p>
+                            <p>신장 100cm ~ 135cm 이하</p>
+                            <div class="choice_wrap">
+                                <select name="sheet_num" class="input_blank w96">
+                                    <option value="1">1대</option>
+                                    <option value="2">2대</option>
+                                </select>
+                                <div class="choice">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="input_blank w170">카시트 선택</span>
+                                    </label>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <a href="#">약관 및 주의사항 체크리스트로 이동<i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>           
+        </div>    
+    </section>
+
+
+    <footer class="footer">
+        <div class="footerlink l-wr">
+            <div class="l-cnt">
+                <div class="linklist_left">
+                    <a href="#">회사소개</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">전자금융거래약관</a>
+                    <a href="#">이메일무단수집거부</a>
+                </div>
+                <div class="linklist_right">
+                    <a href="#">(주)KCP 전자결제서비스</a>
+                </div>
+            </div>
+        </div>
+        <div class="footerinfo l-wr">
+            <div class="l-cnt">
+                <div class="logo">the tour lounge</div>
+                <div class="info">
+                    <span class="info1">주소</span>
+                    <span class="info2">부산광역시 부산진구 동천로70,207호(전포동 , 서면쌍용플래티넘)</span>
+                    <span class="info1">대표자</span>
+                    <span class="info2">유 민</span>
+                    <span class="info1">고객센터</span>
+                    <span class="info2">070-8672-7656</span>
+                    <span class="info1">사업자 등록번호</span>
+                    <span class="info2">887-86- 00492</span>
+                </div>
+                <a href="#" class="check">사업자정보확인</a>
+            </div>
+            <p class="copyrights">2019 COPYRIGHTS ⓒ 더투어라운지 버스여행 All rights reserved.</p>
+            <p class="duty">더싼렌터카는 주)더 투어라운지의 일본렌터카 전문브랜드이며, 모든 권한과 책임은 ㈜더 투어라운지에 있습니다.</p>
+        </div>
+    </footer>
+</body>
+</html>

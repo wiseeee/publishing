@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b9b603b09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="boots_03.css">
+    <title>tables</title>
+</head>
+<body>
+    <div class="d-flex bg-light">
+        <header class="header" id="navbarSupportedContent">
+            <nav class="navbar navbar-dark d-sm-flex d-none navbar_lg navbar_md" id="navbarTogglerDemo01">
+                <div class="collapse navbar-collapse d-block text-center">
+                    <a class="navbar-brand font-weight-bold d-flex justify-content-center align-items-center" href="boots_03.html">
+                        <div class="rotate">
+                            <i class="fas fa-laugh-wink"></i>
+                        </div>
+                        <div class="d-none d-md-flex">SB ADMIN</div>
+                    </a>
+                    <div class="dropdown-divider"></div> 
+                    <ul class="navbar-nav mr-auto mt-2 mt-0 text-left">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-tachometer-alt mr-md-auto"></i>Dashboard <span class="sr-only">(current)</span></a>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <p class="dropdown-name text-uppercase text-center px-0 text-md-left">
+                            INTERFACE
+                        </p>   
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i>Component
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <p class="dropdown-name">
+                                    CUSTOM COMPONENTS:
+                                </p>
+                                <a class="dropdown-item" href="#">Buttons</a>
+                                <a class="dropdown-item" href="#">Cards</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-wrench"></i>Utilities
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <p class="dropdown-name">
+                                    CUSTOM UTILITIES:
+                                </p>
+                                <a class="dropdown-item" href="#">Colors</a>
+                                <a class="dropdown-item" href="#">Borders</a>
+                                <a class="dropdown-item" href="#">Animations</a>
+                                <a class="dropdown-item" href="#">Others</a>
+                            </div>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <p class="dropdown-name text-uppercase text-left px-0">
+                            addons
+                        </p> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-folder"></i>Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <p class="dropdown-name">
+                                    LOGIN SCREENS:
+                                </p>
+                                <a class="dropdown-item" href="boots_03_login.html">Login</a>
+                                <a class="dropdown-item" href="boots_03_registers.html">Register</a>
+                                <a class="dropdown-item" href="#">Forgot Password</a>
+                                <p class="dropdown-name">
+                                    OTHER PAGES:
+                                </p>
+                                <a class="dropdown-item" href="#">404 Pages</a>
+                                <a class="dropdown-item" href="#">Blank Pages</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-chart-area"></i>Charts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="boots_03_table.html"><i class="fas fa-table"></i>Tables</a>
+                        <div class="dropdown-divider"></div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="d-block section">
+            <nav class="navbar navbar-light bg-white shadow topbar mb-4 d-flex justify-content-between align-items-center flex-nowrap">
+                <button class="navbar-toggler d-sm-none d-flex" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="form-inline d-sm-flex d-none">
+                    <input class="form-control bg-light border-0 d-flex nav_search" type="search" placeholder="Search for..." aria-label="Search">
+                    <button class="btn my-2 my-sm-0 search_btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="d-flex justify-content-end align-items-center">
+                    <div class="d-flex">
+                        <a class="count d-none d-flex" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a class="count" href="#">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge badge-danger">3+</span>
+                        </a>
+                        <a class="count" href="#">
+                            <i class="fas fa-envelope"></i>
+                            <span class="badge badge-danger">7</span>
+                        </a>
+                    </div>
+                    <div class="divder-y"></div>
+                    <div class="d-flex align-items-center">
+                        <span class="d-lg-inline-block d-none text-muted name">Douglas McGee</span>
+                        <img src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile.svg" class="rounded-circle profile_img">
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid content">
+                <div class="d-block mb-4">
+                    <h1 class="h3">Tables</h1>
+                    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
+                        <a href="#" class="font-blue">official DataTables documentation.</a>
+                    </p>
+                </div>
+                <div class="card shadow">
+                    <h5 class="card-header font-weight-bold py-3">DataTables Example</h5>
+                    <div class="card-body table-responsive">
+                        <div class="row mb-4">
+                            <div class="col-sm-6 col-12">
+                                <label>
+                                    Show
+                                    <select class="custom-select custom-select-sm">
+                                        <option value="1">10</option>
+                                        <option value="2" selected>25</option>
+                                        <option value="3">50</option>
+                                        <option value="3">100</option>
+                                    </select>
+                                    entries
+                                </label>
+                            </div>
+                            <div class="col-sm-6 col-12 text-right">
+                                <label>
+                                    Search :
+                                    <input class="form-control form-control-sm d-inline-block" type="search">
+                                </label>
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="font-weight-bold text-capitalize">
+                                    <th scope="col">name</th>
+                                    <th scope="col">position</th>
+                                    <th scope="col">office</th>
+                                    <th scope="col">age</th>
+                                    <th scope="col">start date</th>
+                                    <th scope="col">salary</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr class="font-weight-bold text-capitalize">
+                                    <th scope="col">name</th>
+                                    <th scope="col">position</th>
+                                    <th scope="col">office</th>
+                                    <th scope="col">age</th>
+                                    <th scope="col">start date</th>
+                                    <th scope="col">salary</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>$162,700</td>
+                                </tr>
+                                <tr>
+                                    <td>Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td>66</td>
+                                    <td>2009/01/12</td>
+                                    <td>$86,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Bradley Greer</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td>41</td>
+                                    <td>2012/10/13</td>
+                                    <td>$132,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Brenden Wagner</td>
+                                    <td>Software Engineer</td>
+                                    <td>San Francisco</td>
+                                    <td>28</td>
+                                    <td>2011/06/07</td>
+                                    <td>$206,850</td>
+                                </tr>
+                                <tr>
+                                    <td>Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    <td>61</td>
+                                    <td>2012/12/02</td>
+                                    <td>$372,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Bruno Nash</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td>38</td>
+                                    <td>2011/05/03</td>
+                                    <td>$163,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Caesar Vance</td>
+                                    <td>Pre-Sales Support</td>
+                                    <td>New York</td>
+                                    <td>21</td>
+                                    <td>2011/12/12</td>
+                                    <td>$106,450</td>
+                                </tr>
+                                <tr>
+                                    <td>Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>$162,700</td>
+                                </tr>
+                                <tr>
+                                    <td>Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td>66</td>
+                                    <td>2009/01/12</td>
+                                    <td>$86,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Bradley Greer</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td>41</td>
+                                    <td>2012/10/13</td>
+                                    <td>$132,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Brenden Wagner</td>
+                                    <td>Software Engineer</td>
+                                    <td>San Francisco</td>
+                                    <td>28</td>
+                                    <td>2011/06/07</td>
+                                    <td>$206,850</td>
+                                </tr>
+                                <tr>
+                                    <td>Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    <td>61</td>
+                                    <td>2012/12/02</td>
+                                    <td>$372,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Bruno Nash</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td>38</td>
+                                    <td>2011/05/03</td>
+                                    <td>$163,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Caesar Vance</td>
+                                    <td>Pre-Sales Support</td>
+                                    <td>New York</td>
+                                    <td>21</td>
+                                    <td>2011/12/12</td>
+                                    <td>$106,450</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <p class="paging">Showing 1 to 25 of 57 entries</p>
+                            </div>
+                            <div class="col-sm-6 col-12 text-right">
+                                <nav aria-label="..." class="text-right">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

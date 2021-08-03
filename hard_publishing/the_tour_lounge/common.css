@@ -70,7 +70,7 @@ header.header .form_wrap .search{border-radius:5px; width:195px; height:31px; pa
 header.header .global_wrap .global{color:#434343;}
 header.header .login_wrap .login{color:#434343;}
 
-section.main .rolling_banner{height:660px;  background: url('http://thetourlounge.com/img/main/mainvisual1.jpg' ) no-repeat; display:flex; align-items:center; justify-content:center;}
+section.main .rolling_banner{height:660px;  background: url('./img/mainvisual1.jpeg') no-repeat; display:flex; align-items:center; justify-content:center;}
 
 section.main .rolling_banner .ment_wrap p {text-align:center; color:#ffffff;font-size:66px; font-weight:300; line-height:60px;}
 section.main .rolling_banner .ment_wrap p span{color:#ffffff;font-size:66px; font-weight:700;}
@@ -82,7 +82,7 @@ section.goods_section .goods_title p{font-size:24px; font-weight:400px; text-ali
 section.goods_section .goods_list a:not(:nth-child(3n)) {margin:0 10px 60px 0; display:inline-block;}
 section.goods_section .goods_list a:nth-child(3n) {margin-bottom:60px; display:inline-block;}
 
-section.goods_section .goods_list a .goods_wrap .goods_img{width:390px; height:360px; margin-bottom:12px;background: url('http://thetourlounge.com/img/main/banner1-1.jpg' ) no-repeat; background-size:cover;}
+section.goods_section .goods_list a .goods_wrap .goods_img{width:390px; height:360px; margin-bottom:12px;background: url('./img/banner1-1.jpeg') no-repeat; background-size:cover;}
 section.goods_section .goods_list a .goods_wrap .goods_img img {height:100%;}
 section.goods_section .goods_list a .goods_wrap .contry{background-color:#0aa69a; border-radius:5px; text-align:center; width:57px; height:23px; line-height:23px; color:#fff; display:inline-block;}
 section.goods_section .goods_list a .goods_wrap .city{font-size:13px; color:#767676; margin-left:7px;}
